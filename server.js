@@ -7,8 +7,8 @@ const { spawn } = require('child_process');
 const PORT = process.env.PORT || 3000;
 const PASSWORD = process.env.RELAY_PASSWORD;
 const ORIGIN = process.env.ALLOW_ORIGIN || '*';
-const RUN_MS = (+process.env.RUN_SECONDS || 30) * 1000;
-const BUILD_MS = (+process.env.BUILD_SECONDS || 120) * 1000;
+const RUN_MS = (+process.env.RUN_SECONDS || 120) * 1000;
+const BUILD_MS = (+process.env.BUILD_SECONDS || 240) * 1000;
 const MAX_OUT = 200 * 1024;
 const MAX_BODY = 2e6;
 if (!PASSWORD || PASSWORD.length < 8) { console.error('Set RELAY_PASSWORD (at least 8 characters).'); process.exit(1); }
