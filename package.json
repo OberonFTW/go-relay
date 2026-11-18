@@ -1,0 +1,9 @@
+{
+  "name": "go-relay",
+  "version": "1.0.0",
+  "description": "Tiny relay: runs Go projects from DevPad on a CodeSandbox VM",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "@codesandbox/sdk": "^2.4.2" }
+}
